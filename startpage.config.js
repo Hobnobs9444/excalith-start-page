@@ -1,45 +1,45 @@
 const defaultConfig = {
-	username: "Excalith",
-	theme: {
-		backgroundColor: "#121317",
-		windowColor: "#1e212b",
-		glowColor: "#6b5cb157",
-		white: "#e2e2e2",
-		gray: "#97989d",
-		black: "#16161e",
-		red: "#ec6183",
-		green: "#2ed8a2",
-		yellow: "#e8b195",
-		blue: "#2bc3de",
-		cyan: "#62e0e2",
-		magenta: "#e069aa",
-		violet: "#d1aff8",
-		orange: "#ff8800"
+	"username": "Mark",
+	"theme": {
+		"backgroundColor": "#121317",
+		"windowColor": "#1e212b",
+		"glowColor": "#6b5cb157",
+		"white": "#e2e2e2",
+		"gray": "#97989d",
+		"black": "#16161e",
+		"red": "#ec6183",
+		"green": "#2ed8a2",
+		"yellow": "#e8b195",
+		"blue": "#2bc3de",
+		"cyan": "#62e0e2",
+		"magenta": "#e069aa",
+		"violet": "#d1aff8",
+		"orange": "#ff8800"
 	},
-	terminal: {
-		fixedHeight: true,
-		windowGlow: true,
-		textGlow: false
+	"terminal": {
+		"fixedHeight": true,
+		"windowGlow": true,
+		"textGlow": false
 	},
-	prompt: {
-		ctrlC: true,
-		placeholder: "command...",
-		placeholderColor: "gray",
-		userColor: "green",
-		atColor: "gray",
-		hostColor: "magenta",
-		promptColor: "magenta",
-		promptSymbol: "❯",
-		caretColor: "green",
-		selectionBg: "yellow",
-		selectionFg: "black"
+	"prompt": {
+		"ctrlC": true,
+		"placeholder": "command...",
+		"placeholderColor": "gray",
+		"userColor": "green",
+		"atColor": "gray",
+		"hostColor": "magenta",
+		"promptColor": "magenta",
+		"promptSymbol": "❯",
+		"caretColor": "green",
+		"selectionBg": "yellow",
+		"selectionFg": "black"
 	},
-	fetch: {
-		timeFormat: "HH:mm",
-		dateFormat: "DD/MM/YYYY",
-		titleColor: "yellow",
-		image: "icon.svg",
-		data: [
+	"fetch": {
+		"timeFormat": "HH:mm",
+		"dateFormat": "DD/MM/YYYY",
+		"titleColor": "yellow",
+		"image": "icon.svg",
+		"data": [
 			"Time: {time}",
 			"Date: {date}",
 			"{seperator}",
@@ -50,213 +50,218 @@ const defaultConfig = {
 			"{colors}"
 		]
 	},
-	urlLaunch: {
-		target: "_self",
-		defaultColor: "white",
-		hoverColor: "violet"
+	"urlLaunch": {
+		"target": "_self",
+		"defaultColor": "white",
+		"hoverColor": "violet"
 	},
-	search: {
-		default: "https://google.com/search?q=",
-		target: "_self",
-		shortcutRegex: "([A-Za-z0-9]+) (.*)",
-		shortcuts: [
+	"search": {
+		"default": "https://google.com/search?q=",
+		"target": "_self",
+		"shortcutRegex": "([A-Za-z0-9]+) (.*)",
+		"shortcuts": [
 			{
-				alias: "g",
-				name: "Google Search",
-				url: "https://google.com/search?q={}"
+				"alias": "g",
+				"name": "Google Search",
+				"url": "https://google.com/search?q={}"
 			},
 			{
-				alias: "d",
-				name: "DuckDuckGo Search",
-				url: "https://duckduckgo.com/?q={}"
+				"alias": "emc",
+				"name": "Electronic Medicines Compendium Search",
+				"url": "https://www.medicines.org.uk/emc/search?q={}"
 			},
 			{
-				alias: "b",
-				name: "Brave Search",
-				url: "https://search.brave.com/search?q={}"
+				"alias": "bnf",
+				"name": "BNF Search",
+				"url": "https://bnf.nice.org.uk/search/?q={}"
 			},
 			{
-				alias: "gh",
-				name: "Github Search",
-				url: "https://github.com/search?q={}"
+				"alias": "utd",
+				"name": "UpToDate Search",
+				"url": "https://www.uptodate.com/contents/search?search={}"
 			},
 			{
-				alias: "s",
-				name: "Stack Overflow Search",
-				url: "https://stackoverflow.com/search?q={}"
+				"alias": "gh",
+				"name": "Github Search",
+				"url": "https://github.com/search?q={}"
 			},
 			{
-				alias: "r",
-				name: "Subreddit Search",
-				url: "https://reddit.com/r/{}"
+				"alias": "s",
+				"name": "Stack Overflow Search",
+				"url": "https://stackoverflow.com/search?q={}"
 			},
 			{
-				alias: "w",
-				name: "Wikipedia Search",
-				url: "https://en.wikipedia.org/wiki/{}"
+				"alias": "r",
+				"name": "Subreddit Search",
+				"url": "https://reddit.com/r/{}"
+			},
+			{
+				"alias": "w",
+				"name": "Wikipedia Search",
+				"url": "https://en.wikipedia.org/wiki/{}"
 			}
 		]
 	},
-	sections: [
+	"sections": [
 		{
-			title: "General",
-			color: "green",
-			align: "left",
-			links: [
+			"title": "Admin",
+			"color": "green",
+			"align": "left",
+			"links": [
 				{
-					name: "Portfolio",
-					url: "https://cancellek.com",
-					icon: "mdi:web"
+					"name": "Gmail",
+					"url": "https://mail.google.com",
+					"icon": "mdi:gmail"
 				},
 				{
-					name: "Keybase",
-					url: "https://keybase.io/",
-					icon: "fa-brands:keybase"
+					"name": "Calendar",
+					"url": "https://calendar.google.com", 
+					"icon": "mdi:calendar"
 				},
 				{
-					name: "GPT",
-					url: "https://chat.openai.com/",
-					icon: "simple-icons:openai"
+					"name": "Taskade",
+					"url": "https://www.taskade.com",
+					"icon": "logos:taskade"
 				},
 				{
-					name: "OCI",
-					url: "https://www.oracle.com/cloud/",
-					icon: "simple-icons:oracle"
+					"name": "TickTick",
+					"url": "https://ticktick.com",
+					"icon": "mdi:check-all"
 				}
 			]
 		},
 		{
-			title: "Dev",
-			color: "magenta",
-			align: "left",
-			links: [
+			"title": "Dev",
+			"color": "magenta",
+			"align": "left",
+			"links": [
 				{
-					name: "GitHub",
-					url: "https://github.com",
-					icon: "mdi:github"
+					"name": "GitHub",
+					"url": "https://github.com",
+					"icon": "mdi:github"
 				},
 				{
-					name: "GitLab",
-					url: "https://gitlab.com",
-					icon: "ph:gitlab-logo-simple-fill"
+					"name": "GPT",
+					"url": "https://chat.openai.com",
+					"icon": "tabler:brand-openai"
 				},
 				{
-					name: "Dev.to",
-					url: "https://dev.to",
-					icon: "material-symbols:logo-dev"
+					"name": "Keybr",
+					"url": "https://www.keybr.com/",
+					"icon": "mdi:keyboard"
 				},
 				{
-					name: "Stack Overflow",
-					url: "https://stackoverflow.com/",
-					icon: "mdi:stack-overflow"
+					"name": "Stack Overflow",
+					"url": "https://stackoverflow.com/",
+					"icon": "mdi:stack-overflow"
 				}
 			]
 		},
 		{
-			title: "Social",
-			color: "violet",
-			align: "left",
-			links: [
+			"title": "Medicine",
+			"color": "violet",
+			"align": "left",
+			"links": [
 				{
-					name: "Twitter",
-					url: "https://twitter.com",
-					icon: "mdi:twitter"
+					"name": "Nature Medicine",
+					"url": "https://www.nature.com/nm",
+					"icon": "mdi:leaf"
 				},
 				{
-					name: "Mastodon",
-					url: "https://mastodon.social/",
-					icon: "ri:mastodon-fill"
+					"name": "LITFL",
+					"url": "https://litfl.com",
+					"icon": "mdi:hospital"
 				},
 				{
-					name: "Reddit",
-					url: "https://reddit.com",
-					icon: "mdi:reddit"
+					"name": "Deranged Physiology",
+					"url": "https://derangedphysiology.com",
+					"icon": "mdi:heart"
 				},
 				{
-					name: "Polywork",
-					url: "https://polywork.com",
-					icon: "simple-icons:polywork"
+					"name": "MDCalc",
+					"url": "https://mdcalc.com",
+					"icon": "mdi:calculator"
 				}
 			]
 		},
 		{
-			title: "Gaming",
-			color: "cyan",
-			align: "left",
-			links: [
+			"title": "Relax",
+			"color": "cyan",
+			"align": "left",
+			"links": [
 				{
-					name: "Polygon",
-					url: "https://polygon.com",
-					icon: "uil:polygon"
+					"name": "Reddit",
+					"url": "https://reddit.com",
+					"icon": "mdi:reddit"
 				},
 				{
-					name: "IGN",
-					url: "https://ign.com",
-					icon: "mdi:currency-sign"
+					"name": "YouTube",
+					"url": "https://youtube.com",
+					"icon": "mdi:youtube"
 				},
 				{
-					name: "RPS",
-					url: "https://rockpapershotgun.com/",
-					icon: "ph:toilet-paper-bold"
+					"name": "Netflix",
+					"url": "https://netflix.com",
+					"icon": "mdi:netflix"
 				},
 				{
-					name: "80lv",
-					url: "https://80.lv/",
-					icon: "tabler:hand-rock"
+					"name": "NowTV",
+					"url": "https://nowtv.com",
+					"icon": "mdi:television-box"
 				}
 			]
 		},
 		{
-			title: "Science",
-			color: "blue",
-			align: "left",
-			links: [
+			"title": "NHS",
+			"color": "blue",
+			"align": "left",
+			"links": [
 				{
-					name: "PopSci",
-					url: "https://popsci.com/",
-					icon: "material-symbols:science"
+					"name": "NHS mail",
+					"url": "https://outlook.office.com",
+					"icon": "mdi:microsoft-outlook"
 				},
 				{
-					name: "Space",
-					url: "fa6-solid:user-astronaut",
-					icon: "mdi:reddit"
+					"name": "Lifelong Learning",
+					"url": "https://lifelong.rcoa.ac.uk",
+					"icon": "mdi:gas-cylinder"
 				},
 				{
-					name: "NASA",
-					url: "https://blogs.nasa.gov/",
-					icon: "simple-icons:nasa"
+					"name": "MyESR",
+					"url": "https://my.esr.nhs.uk",
+					"icon": "mdi:file-multiple"
 				},
 				{
-					name: "ESA",
-					url: "https://blogs.esa.int/",
-					icon: "mdi:black-mesa"
+					"name": "Bridge",
+					"url": "https://heeoe.bridgeapp.com",
+					"icon": "mdi:bridge"
 				}
 			]
 		},
 		{
-			title: "Tech",
-			color: "yellow",
-			align: "left",
-			links: [
+			"title": "Others",
+			"color": "yellow",
+			"align": "left",
+			"links": [
 				{
-					name: "TechCrunch",
-					url: "https://techcrunch.com/",
-					icon: "game-icons:techno-heart"
+					"name": "Google Maps",
+					"url": "https://maps.google.com",
+					"icon": "mdi:google-maps"
 				},
 				{
-					name: "Verge",
-					url: "https://www.theverge.com/",
-					icon: "arcticons:verge"
+					"name": "OS Maps",
+					"url": "https://explore.osmaps.com",
+					"icon": "mdi:map"
 				},
 				{
-					name: "It's Foss",
-					url: "https://itsfoss.com/",
-					icon: "ri:mastodon-fill"
+					"name": "Amazon",
+					"url": "https://amazon.co.uk",
+					"icon": "simple-icons:amazon"
 				},
 				{
-					name: "9To5 Linux",
-					url: "https://9to5linux.com/",
-					icon: "uil:linux"
+					"name": "Bins",
+					"url": "https://www.cambridge.gov.uk/check-when-your-bin-will-be-emptied",
+					"icon": "mdi:trash-can"
 				}
 			]
 		}
